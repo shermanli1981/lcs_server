@@ -15,7 +15,6 @@ public class SuffixTree {
         for(int i = 0; i < input.length; i++){
             String v = input[i];
             for(int j = 0; j < v.length(); j++){
-                System.out.println(v.substring(j));
                 addStringToTree(v.substring(j), i);
             }
         }
