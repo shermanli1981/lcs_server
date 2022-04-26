@@ -30,3 +30,4 @@ Tests are included with the code.
 3) Navigate to Swagger UI, then you can perform the operation
 
     Visit http://localhost:8080/swagger-ui.html in your browser.
+![image](https://user-images.githubusercontent.com/104450517/165347258-611cedc3-3ffa-4868-8801-3ebdc9459831.png)
