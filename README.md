@@ -31,3 +31,42 @@ Tests are included with the code.
 
     Visit http://localhost:8080/swagger-ui.html in your browser.
 ![image](https://user-images.githubusercontent.com/104450517/165347258-611cedc3-3ffa-4868-8801-3ebdc9459831.png)
+
+4) Call the API with below body, return one result:
+{
+  "setOfStrings": [
+    {"value": "comcast"},
+    {"value": "comcastic"},
+    {"value": "broadcaster"}
+  ]
+}
+
+
+![image](https://user-images.githubusercontent.com/104450517/165348114-ab6e11d3-4c16-4471-bd48-7a32238d496b.png)
+
+Result as below:
+![image](https://user-images.githubusercontent.com/104450517/165348437-88944c1b-1f03-42b3-b7ac-282c146db442.png)
+
+5) Call the API with below body, return two results:
+{
+  "setOfStrings": [
+    {"value": "abcdfg"},
+    {"value": "abfg"},
+    {"value": "abfgcd"}
+  ]
+}
+![image](https://user-images.githubusercontent.com/104450517/165348667-cb49002b-0159-421f-9330-5328cb5df950.png)
+
+6) Call the API with below body, return three results:
+
+{
+  "setOfStrings": [
+    {"value": "abcdefxyz"},
+    {"value": "xyzabcdef"},
+    {"value": "defxyzabc"}
+  ]
+}
+
+![image](https://user-images.githubusercontent.com/104450517/165348980-e561a9a5-b6e5-44c7-9605-1d19fd0d25e6.png)
+
+
