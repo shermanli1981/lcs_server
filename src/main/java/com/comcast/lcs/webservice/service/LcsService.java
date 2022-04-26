@@ -43,5 +43,4 @@ public class LcsService implements IService{
         Collections.sort(res, Comparator.comparing(OutputString::getValue));
         return res;
     }
-    
 }

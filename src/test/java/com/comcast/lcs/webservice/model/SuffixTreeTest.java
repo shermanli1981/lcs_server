@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class SuffixTreeTest {
 
     @Test
-    public void TreeTest(){
+    public void buildTreeTest(){
         SuffixTree tree = new SuffixTree();
         tree.buildTree(new String[]{"ABAB",  "BABA", "ABBA"});
         TreeNode root = tree.getRoot();

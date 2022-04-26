@@ -40,7 +40,7 @@ public class LcsServiceTest {
     }
 
     @Test
-    void findLongestCommonSubstringsReturnMultipleResult(){
+    void findLongestCommonSubstringsReturnTwoResult(){
         InputBody inputBody = new InputBody();
         List<InputString> inputStrings = new ArrayList<>();
         inputStrings.add(InputString.builder()
@@ -60,7 +60,30 @@ public class LcsServiceTest {
 
         Assert.assertTrue(outputStrings.get(0).getValue().equals("ab"));
         Assert.assertTrue(outputStrings.get(1).getValue().equals("fg"));
+    }
 
+    @Test
+    void findLongestCommonSubstringsReturnThreeResult(){
+        InputBody inputBody = new InputBody();
+        List<InputString> inputStrings = new ArrayList<>();
+        inputStrings.add(InputString.builder()
+                .value("abcdefxyz")
+                .build());
+        inputStrings.add(InputString.builder()
+                .value("defxyzabc")
+                .build());
+        inputStrings.add(InputString.builder()
+                .value("xyzabcdef")
+                .build());
+        inputBody.setSetOfStrings(inputStrings);
+        ResultBody resultBody = lcsServiceService.findLongestCommonSubstring(inputBody);
+        Assert.assertEquals(3, resultBody.getLcs().size());
+
+        List<OutputString> outputStrings = resultBody.getLcs();
+
+        Assert.assertTrue(outputStrings.get(0).getValue().equals("abc"));
+        Assert.assertTrue(outputStrings.get(1).getValue().equals("def"));
+        Assert.assertTrue(outputStrings.get(2).getValue().equals("xyz"));
     }
 
 }
