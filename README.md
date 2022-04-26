@@ -70,3 +70,6 @@ Result as below:
 ![image](https://user-images.githubusercontent.com/104450517/165348980-e561a9a5-b6e5-44c7-9605-1d19fd0d25e6.png)
 
 
+7) Test are included under the test folder:
+
+![image](https://user-images.githubusercontent.com/104450517/165357120-546f83c6-8cfb-4545-8486-f63eb954c5e2.png)
