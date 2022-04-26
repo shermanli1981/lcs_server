@@ -12,7 +12,7 @@ public class LcsService implements IService{
     @Override
     public ResultBody findLongestCommonSubstring(InputBody inputBody) {
         List<InputString> inputStrings = inputBody.getSetOfStrings();
-        String arr[] = new String[inputStrings.size()];
+        String[] arr = new String[inputStrings.size()];
         for(int i = 0; i < inputStrings.size(); i++){
             arr[i] = inputStrings.get(i).getValue();
         }
@@ -20,7 +20,7 @@ public class LcsService implements IService{
         return ResultBody.builder().lcs(result).build();
     }
 
-    public static List<OutputString> findLongestSubString(String arr[]){
+    public List<OutputString> findLongestSubString(String[] arr){
         SuffixTree tree = new SuffixTree();
         tree.buildTree(arr);
 
