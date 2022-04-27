@@ -25,7 +25,7 @@ Tests are included with the code.
      ```
     File -> New -> Project from Exsiting Source..
     ```
-    run the application by right clicking on the PetstoreApplication main class and choosing Run 'PetstoreApplication'.
+    run the application by right clicking on the LongestCommonSubstringApplication main class and choosing Run 'LongestCommonSubstringApplication'.
     
 3) Navigate to Swagger UI, then you can perform the operation
 
